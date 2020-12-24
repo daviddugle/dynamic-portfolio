@@ -1,0 +1,49 @@
+.naming-sect,
+.headTitle{
+    font-family: 'Alfa Slab One', cursive;
+    vertical-align: auto;
+    border: 2px dodgerblue;
+    text-shadow: 2px 2px 10px dodgerblue;
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: dodgerblue;
+    transition: text-shadow 1s;
+    
+}
+.naming-sect:hover{
+    text-shadow: 2px 2px 35px dodgerblue;
+    
+
+}
+
+
+.navbar{
+    font-family: 'Archivo Black', sans-serif;
+    /* text-shadow: 2px 2px 5px white; */
+    
+    
+}
+body{
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+nav{
+    background-color: red;
+}
+.first-card,
+.second-card,
+.third-card,
+.link
+{
+    color: black;
+    font-size: 30px;
+    text-shadow: 2px 2px 15px dodgerblue;
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: dodgerblue;
+    font-family: 'Alfa Slab One', cursive;
+}
+.modal-content{
+    font-size: 24px;
+
+  
+}
