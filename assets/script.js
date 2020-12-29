@@ -57,7 +57,6 @@ for (let i = 0; i < portfolio.length; i++) {
     const portGit = portfolio[i].git;
     const portDep = portfolio[i].deployed;
 
-    // const columns = $("<div>");
 
     let header = $("<div>").text(portfolio[i].name);
     header.addClass("headTitle column is-half")
@@ -72,20 +71,5 @@ for (let i = 0; i < portfolio.length; i++) {
 
     header.append(image, github, sp, deploy);
     $("#profMat").append(header);
-
-
-    // if (i % 2 === 0) {
-    //     console.log("odd");
-    //     columns.addClass("columns");
-    //     columns.append(header);
-    //     $("#profMat").append(columns);
-    // } else {
-        
-    //     $("#profMat").append(header);
-
-    //     console.log("even")
-    // }
-
-
 
 }
