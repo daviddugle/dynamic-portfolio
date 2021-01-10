@@ -1,5 +1,8 @@
 .naming-sect,
-.headTitle{
+.headTitle, 
+label,
+.tech,
+h3 {
     font-family: 'Alfa Slab One', cursive;
     vertical-align: auto;
     border: 2px dodgerblue;
@@ -49,4 +52,17 @@ nav{
 }
 .image{
     height: 200px;
+}
+.dispBox {
+    box-shadow: 2px 2px 10px dodgerblue;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+textarea{
+    background: black;
+    color: white;
+    outline: dodgerblue;
+}
+i{
+    font-size: 48px;
 }
