@@ -23,7 +23,11 @@ const portfolio = [
         name: "Weather Dashboard",
         img: "https://github.com/daviddugle/Weather-Dashboard/blob/main/assets/Photos/Screenshot%202020-11-13%20204346.jpg?raw=true",
         git: "https://github.com/daviddugle/Weather-Dashboard",
-        deployed: "https://daviddugle.github.io/Weather-Dashboard/"
+        deployed: "https://daviddugle.github.io/Weather-Dashboard/",
+        description: "This is a fun app that uses the Open Weather API. It takes in locations that you would like to search and stores them on the local storage. The app gives you a current weather forecast and a five day.",
+        challenges: "In the beginning I had challenges with the local storage and saving the locations the user had selected. Then it was just a matter of managing the third party API information.",
+        persevered: "I continued to study local storage and how to set and get the informtion. Also with the third party API it was important to console log the data at all steps to make sure that I was getting what I needed.",
+        technology: ["Third Party API, Local Storage","jQuery", "Bootstrap", "fontAwesome","Moment"]
     },
     {
         name: "Work Day Scheduler",
@@ -73,3 +77,19 @@ for (let i = 0; i < portfolio.length; i++) {
     $("#profMat").append(header);
 
 }
+
+
+
+$("#dynImg").attr("src", portfolio[0].img);
+$("#dynTitle").text(portfolio[0].name);
+$("#dynText").text(portfolio[0].description);
+$("#dynChal").text(portfolio[0].challenges);
+$("#dynPers").text(portfolio[0].persevered);
+
+for (let i=0;i<portfolio[0].technology.length;i++){
+    let list = $("<li>").text(portfolio[0].technology[i]);
+    $(".dynTech").append(list);
+}
+$("#dynGit").attr("href", portfolio[0].git);
+$("#dynDepl").attr("href", portfolio[0].deployed);
+
